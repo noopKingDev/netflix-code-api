@@ -1,9 +1,13 @@
 {
-    "b247deafa97a5122eef246b489074c5d": {
-        "token": "b247deafa97a5122eef246b489074c5d",
-        "username": "dudu",
-        "accountsremaining": 0,
-        "createdBy": "dudu171",
+    "8a1da15ec3c27cb99b29c3371094cf9f": {
+        "token": "8a1da15ec3c27cb99b29c3371094cf9f",
+        "username": "mercadinho",
+        "accountsremaining": 5
+    },
+    "0a3c6d2e365a05bea22fd385e16c7715": {
+        "token": "0a3c6d2e365a05bea22fd385e16c7715",
+        "username": "dudukrlh",
+        "accountsremaining": 10,
         "admin": true
     }
 }
