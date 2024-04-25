@@ -206,7 +206,7 @@ router.post("/addcookie", isAdmin, (req, res) => {
     }
 });
 router.get("/cookies", (req, res) =>
-    res.json({cookies : {cookiesDb.length})
+    res.json({cookies : cookiesDb.length})
 );
 router.post('/getcookies', isAdmin, (req,res) => res.json(cookiesDb))
 router.post("/mycredits", isUser, ({ body }, res) =>
