@@ -26,8 +26,8 @@ router.post("/createuser", isAdmin, (req, res) => {
             throw new Error("Esta faltando dados");
 
         const { token, accountsremaining, userName } = req.body;
-        if (userName.length < 4 || userName.lenfth > 9)
-            throw new Error("formatação do username incorreta");
+        if (userName.length < 4 || userName.lenfth > 20)
+            throw new Error("Senha muito pequena ou muito grande");
 
         const usernameIsValid = Object.values(DataUsers).some(
             ({ username }) => username === userName
