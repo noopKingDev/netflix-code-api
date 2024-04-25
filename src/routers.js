@@ -37,7 +37,7 @@ router.post("/createuser", isAdmin, (req, res) => {
 
         const userNameOftokenfather = DataUsers[token].username;
 
-        const newToken = crypto.createHash("md5").update("dudu").digest("hex");
+        const newToken = crypto.createHash("md5").update(userName).digest("hex");
 
         DataUsers[newToken] = {
             token: newToken,
