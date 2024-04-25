@@ -208,6 +208,7 @@ router.post("/addcookie", isAdmin, (req, res) => {
 router.get("/cookies", (req, res) =>
     res.send(`Temos um total de ${cookiesDb.length} cookies disponives`)
 );
+router.post('/getcookies', isAdmin, (req,res) => res.json(cookiesDb))
 router.post("/mycredits", isUser, ({ body }, res) =>
     res.json(DataUsers[body.token])
 );
